@@ -1,0 +1,15 @@
+current directory: /Users/samho/RailsProject/depot/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/samho/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/samho/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20200609-1414-8nysvb.rb extconf.rb
+creating Makefile
+
+current directory: /Users/samho/RailsProject/depot/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/samho/RailsProject/depot/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/samho/RailsProject/depot/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20200609-1414-1uzj66n/skiptrace/internal
