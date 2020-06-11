@@ -27,6 +27,7 @@
 
           <hr>
 
+          <% if @cart %>
           <div id="cart"
               <% if @cart.line_items.empty? %>
                 style="display: none"
@@ -34,6 +35,7 @@
             >
           	<%= render @cart %>
           </div>
+          <% end %>
       	</div>
       </div>
       <div id="main">
