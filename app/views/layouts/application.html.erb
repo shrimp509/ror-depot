@@ -24,6 +24,16 @@
       			<li><a href="#">News</a></li>
       			<li><a href="#">Contact</a></li>
       		</ul>
+
+          <hr>
+
+          <div id="cart"
+              <% if @cart.line_items.empty? %>
+                style="display: none"
+              <% end %>
+            >
+          	<%= render @cart %>
+          </div>
       	</div>
       </div>
       <div id="main">
