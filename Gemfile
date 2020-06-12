@@ -60,3 +60,9 @@ gem 'pry-rails'
 # jquery
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+
+# encrypted password
+gem 'bcrypt', '~> 3.1.11'
+
+# file system modification
+gem 'guard'

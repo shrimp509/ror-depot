@@ -10,23 +10,27 @@
   </head>
 
   <body class='<%= controller.controller_name %>'>
+
+    <!-- 上橫條 -->
     <div id="banner">
-      <%# <%= image_tag 'fb_logo.png', alt: 'The Pragmatic Bookshelf' %>
       <span class="title">Book Store<%= @page_title %></span>
       <p align="right"><%= Time.now.strftime("%Y/%m/%d %H:%M") %></p>
     </div>
+
     <div id="columns">
       <div id="columns">
       	<div id="side">
+          <!-- 選單 -->
       		<ul>
-      			<li><a href="#">Home</a></li>
-      			<li><a href="#">Questions</a></li>
-      			<li><a href="#">News</a></li>
-      			<li><a href="#">Contact</a></li>
+      			<li><a href=/>Home</a></li>
+      			<li><a href="/">Questions</a></li>
+      			<li><a href="/">News</a></li>
+      			<li><a href="/">Contact</a></li>
       		</ul>
 
           <hr>
 
+          <!-- 購物車 -->
           <% if @cart %>
           <div id="cart"
               <% if @cart.line_items.empty? %>
@@ -36,6 +40,16 @@
           	<%= render @cart %>
           </div>
           <% end %>
+
+          <!-- 給管理者的選單 -->
+          <% if session[:user_id] %>
+          	<ul>
+          		<li><%= link_to 'Orders', orders_path %></li>
+          		<li><%= link_to 'Products', products_path %></li>
+          		<li><%= link_to 'Users', users_path %></li>
+          	</ul>
+          <% end %>
+
       	</div>
       </div>
       <div id="main">
