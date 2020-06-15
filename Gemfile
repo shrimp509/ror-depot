@@ -66,3 +66,6 @@ gem 'bcrypt', '~> 3.1.11'
 
 # file system modification
 gem 'guard'
+
+# i18n
+# gem "rails-i18n"

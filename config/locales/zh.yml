@@ -1,0 +1,28 @@
+zh:
+  layouts:
+    application:
+      title:      "Kdan書店"
+      home:       "首頁"
+      questions:  "問題們"
+      news:       "新聞們"
+      contact:    "聯絡我"
+
+  store:
+    index:
+      title:         "書架"
+      add_to_cart:   "加到購物車"
+
+  carts:
+    cart:
+      title:      "你的購物車"
+      empty:      "清空購物車"
+      checkout:   "結帳"
+
+  number:
+    currency:
+      format:
+        unit: "TWD$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"

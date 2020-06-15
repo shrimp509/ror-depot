@@ -1,0 +1,28 @@
+es:
+  layouts:
+    application:
+      title:      "Biblioteca de Kdan"
+      home:       "Inicio"
+      questions:  "QuePreguntasstions"
+      news:       "Noticias"
+      contact:    "Contacto"
+  store:
+    index:
+      title:         "estante para libros"
+      add_to_cart:   "Antildeadir al Carrito"
+
+
+  carts:
+    cart:
+      title:      "Su carro"
+      empty:      "Carro vacio"
+      checkout:   "revisa"
+
+  number:
+    currency:
+      format:
+        unit: "$US"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%n&nbsp;%u"

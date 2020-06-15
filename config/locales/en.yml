@@ -30,4 +30,32 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      title:          "The Kdan BookStore"
+      home:           "Home"
+      questions:      "Questions"
+      news:           "News"
+      contact:        "Contact"
+
+  store:
+    index:
+      title:          "Bookshelf"
+      add_to_cart:    "Add to Cart"
+
+
+  carts:
+    cart:
+      title:      "Your Cart"
+      empty:      "Empty Cart"
+      checkout:   "Checkout"
+
+
+  number:
+    currency:
+      format:
+        unit: "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"

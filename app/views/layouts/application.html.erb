@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pragprog Books Online Store</title>
+    <title><%= t(".title") %></title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,22 +14,13 @@
 
     <!-- 上橫條 -->
     <div id="banner">
-      <span class="title">Book Store<%= @page_title %></span>
+      <span class="title"><%= t(".title") %></span>
       <p align="right"><%= Time.now.strftime("%Y/%m/%d %H:%M") %></p>
     </div>
 
     <div id="columns">
       <div id="columns">
       	<div id="side">
-          <!-- 選單 -->
-      		<ul>
-      			<li><a href=/>Home</a></li>
-      			<li><a href="/">Questions</a></li>
-      			<li><a href="/">News</a></li>
-      			<li><a href="/">Contact</a></li>
-      		</ul>
-
-          <hr>
 
           <!-- 購物車 -->
           <% if @cart %>
@@ -41,13 +33,23 @@
           </div>
           <% end %>
 
+          <!-- 多國語系選單 -->
+          <ul>
+          	<li><a href="/"><%= t('.home') %></a></li>
+          	<li><a href="/"><%= t('.questions') %></a></li>
+          	<li><a href="/"><%= t('.news') %></a></li>
+          	<li><a href="/"><%= t('.contact') %></a></li>
+          </ul>
+
           <!-- 給管理者的選單 -->
           <% if session[:user_id] %>
-          	<ul>
-          		<li><%= link_to 'Orders', orders_path %></li>
-          		<li><%= link_to 'Products', products_path %></li>
-          		<li><%= link_to 'Users', users_path %></li>
-          	</ul>
+          <hr>
+
+        	<ul>
+        		<li><%= link_to 'Orders', orders_path %></li>
+        		<li><%= link_to 'Products', products_path %></li>
+        		<li><%= link_to 'Users', users_path %></li>
+        	</ul>
           <% end %>
 
       	</div>
