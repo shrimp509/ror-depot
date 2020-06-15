@@ -1,24 +1,16 @@
-# README
+# Simple Book Store Demo
+The app was built with the instructions in the book: [Agile Web Development with Rails 5](https://www.amazon.com/Agile-Web-Development-Rails-5/dp/1680501712)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Screenshots
+![](https://github.com/shrimp509/ror-depot/tree/master/screenshots/home_page.png)
+![](https://github.com/shrimp509/ror-depot/tree/master/screenshots/checkout.png)
+![](https://github.com/shrimp509/ror-depot/tree/master/screenshots/international.png)
 
-Things you may want to cover:
+# Environment
+* Ruby version: `2.7.0`
+* Rails version: `6.0.3.1`
+* Database: SQLite3 `3.28.0`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# How to run?
+1. `$ rails s`
+2. browse `127.0.0.1:3000`
